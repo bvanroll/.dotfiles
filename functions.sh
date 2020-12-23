@@ -37,6 +37,10 @@ function todoClear() {
 	echo "\n" > ~/.todo
 }
 
+# adds github ssh key, requires env var GITHUB_TOKEN to be set
+function addGhSsh() {
+	curl -H "Authorization: token ${GITHUB_TOKEN}" --data "{\"title\":\"${1}\", \"key\":\"$(cat ~/.ssh/id_rsa.pub)\"}" https://api.github.com/user/keys
+}
 
 
 
