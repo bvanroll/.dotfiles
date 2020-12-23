@@ -9,3 +9,4 @@ git config --global user.name "bvanroll"
 
 # set env vars
 set BROWSER=w3m
+set EDITOR=vim
