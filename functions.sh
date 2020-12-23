@@ -25,6 +25,17 @@ function debugMsg() {
 	fi
 }
 
+function todoList() {
+	cat ~/.todo
+}
+
+function todoAdd() {
+	echo "TODO $1\n" >> ~/.todo
+}
+
+function todoClear() {
+	echo "\n" > ~/.todo
+}
 
 
 
