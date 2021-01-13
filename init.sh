@@ -1,9 +1,13 @@
 
 set DEBUG="true"
 
+
 source ~/.dotfiles/functions.sh
 source ~/.dotfiles/aliases.sh
 source ~/.dotfiles/settings.sh
+
+#setting vars, .env for private non git vars just in case
+source ~/.dotfiles/env
 source ~/.dotfiles/.env
 
 if tmux info &> /dev/null; then

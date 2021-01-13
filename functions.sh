@@ -8,15 +8,15 @@ function checkFile() {
 	# check if dest exists
 	if [ -f $2 ]; then
 		mv $2 $2.bak
-		ln -s $1 $2
 	fi
+	ln -s $1 $2
 }
 
 function checkDir() {
 	if [ -d $2 ]; then
 		mv $2 $2.bak
-		ln -s $1 $2
 	fi
+	cp -r $1 $2
 }
 
 function debugMsg() {
