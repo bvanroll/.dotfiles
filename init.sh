@@ -10,19 +10,20 @@ source ~/.dotfiles/settings.sh
 source ~/.dotfiles/env
 source ~/.dotfiles/.env
 
-if tmux info &> /dev/null; then
-	# it's running
-	cat ~/.dotfiles/motd
-else
-	# tmux not running, assume initial sourcing	
-	# deploy
-	source ~/.dotfiles/deploy.sh
+##if tmux info &> /dev/null; then
+#	# it's running
+#	cat ~/.dotfiles/motd
+#else
+#	# tmux not running, assume initial sourcing	
+#	# deploy
+#	source ~/.dotfiles/deploy.sh
+#
+#
+#
+#
+#	tmux
+#fi
+#
+TERM=xterm-256color
 
-
-
-
-	tmux
-fi
-
-
-
+eval "$(pyenv init -)"
